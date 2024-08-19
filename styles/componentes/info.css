@@ -40,6 +40,7 @@
 
 .info__wrapper {
   display: flex;
+  flex direction: row;
   align-items: center;
   padding-inline: 1.25rem;
   gap: 1.5rem;
@@ -77,4 +78,19 @@
   padding: 0.5em 2em;
   border-radius: 6px;
   color: #000;
+}
+
+@media(width < 1024px) {
+  .info__wrapper {
+    flex-direction: column;
+  }
+  .section__description{
+    max-width: 60ch;
+  }
+}
+
+@media( width < 475px) {
+  .section__title{
+    font-size:2ren;
+  }
 }
